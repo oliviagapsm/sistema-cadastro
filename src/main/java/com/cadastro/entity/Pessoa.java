@@ -17,7 +17,7 @@ public class Pessoa {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
-    private char email;
+    private String email;
 
     @Embedded
     Endereco endereco;

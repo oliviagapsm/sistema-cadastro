@@ -13,4 +13,7 @@ public class CadastroService {
         this.cadastroRepository = cadastroRepository;
 
     }
+
+    public void Pessoa(PessoaDTO pessoaDTO) {
+    }
 }

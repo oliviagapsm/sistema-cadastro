@@ -1,6 +1,8 @@
 package com.cadastro.resource;
 
+import com.cadastro.service.dto.CadastroService;
 import com.cadastro.service.dto.PessoaDTO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,4 +16,7 @@ public class CadastroResource {
         cadastroService.Pessoa(pessoaDTO);
         return ResponseEntity.created(null).build();
     }
+
+    @Autowired
+    CadastroService cadastroService;
 }
